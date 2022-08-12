@@ -1,0 +1,391 @@
+@import url('http://fonts.cdnfonts.com/css/clash-display');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Clash Display', sans-serif;
+}
+
+.navbtn{
+    display: none;
+    color: #fff;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    background-color: #1E1E1E;
+    color: #FFFF;
+}
+.nav1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+.logo{
+   padding: 5px;
+   margin-left: 5px;
+}
+
+.nav11{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    
+}
+.nav11 a{
+    padding: 0px 20px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+.nav12{
+    background: linear-gradient(180deg, #379B43 0%, #6EB536 100%);
+    margin: 10px 0px;
+}
+.nav12 a{
+    color: white;
+}
+
+.main{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.bg-img{
+    background-image: url('img/pexels-archie-binamira-672451.jpg');
+    opacity: .9;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+.white-font{
+    color:white;
+}
+
+.main11{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 699px;
+    width: 100%;
+    padding: 0rem 3rem;
+}
+.main11 h1{
+    font-size: 65px;
+}
+.main12{
+    height: 699px;
+width:50%;
+padding:20px;
+}
+.main12 img{
+    width:700px;height:500px;
+}
+.bold{
+    font-size: 85px;
+    color:rgb(56 21 102);
+}
+
+.btn-box{
+    width: 190px;
+    height: 68px;
+    margin: 2rem 20rem;
+    position: relative;
+}
+.btn-box div{
+    width: 190px;
+    height: 68px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+   border: 2px solid #9d9696;
+}
+.btn{
+    width: 190px;
+    height: 68px;
+    background: linear-gradient(180deg, #131085 0%, #03010e 100%);
+    color: white;
+    position: absolute;
+}
+.news{
+    width: 100%;
+    padding:2rem 0rem;
+    height:515px;
+    display:flex;
+    flex-direction: column;
+    margin: 0px 0 4rem 0;
+}
+.news1{
+    width: 100%;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+.news1 h1{
+    font-size: 80px;
+}
+.news2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0rem 4rem;
+    height: 100px;
+    margin:8rem;
+}
+.news2 input{
+    height: 100%;
+    margin: 2px 2.5rem;
+    padding: 12px;
+    width: -webkit-fill-available;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+.footer{
+    width: 100%;
+    background-color: black;
+    color:white;
+}
+.foot{
+    width: 100%;
+    padding: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.foot1{
+    width: 50%;
+}
+.foot1 p{
+    font-size: 24px;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+.foot2{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.foot2 img{
+    margin: 1.3rem;
+    background-color: #0c0c0d;
+    Position: relative;
+}
+
+button{
+    cursor: pointer;
+}
+
+.super-main{
+    background-color: white;
+}
+.light{
+    color: black;
+}
+.light1{
+    background-color: white;
+}
+.navbtn{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 14px;
+    right: 18px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(75, 75, 75);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #bfbfbf;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    font-size: 60px;
+    margin-left: 50px;
+}
+
+@keyframes bannermove {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width:1050px) {
+   
+    .main11 h1{
+        font-size: 50px;
+    }
+    .news1 h1{
+        font-size: 50px;
+    }
+    .btn-box{
+        width: 150px;
+        height: 58px;
+        margin-top: 3rem;
+    }
+    .btn-box div{
+        width: 150px;
+        height: 58px;
+    }
+    .btn{
+        width: 150px;
+        height: 58px;
+    }
+    
+    .news2 input{
+        margin: 0rem 1.8rem;
+    }
+    .main11 img{
+        width: 100%;
+    }
+    .navbtn{
+        display: none;
+    }
+}
+@media screen and (max-width:850px) {
+    
+    .news2 input{
+        margin: 0rem 1rem;
+    }
+    .news2{
+        padding: 0rem 1rem;
+    }
+    .foot1 img{
+        width: 100px;
+        height: 100px;
+    }
+    .foot1 p{
+        font-size: 18px;
+    }
+    .foot2 img{
+        width: 30px;
+    }
+    .main{
+        display:flex;
+        flex-direction: column;
+    }
+    .main11{
+        width:100%;
+    }
+    .main12{
+        width:100%;
+    }
+    .main11 h1{
+        font-size: 48px;
+    }
+    .news1 h1{
+        font-size: 48px;
+    }
+    .btn-box{
+        width: 120px;
+        height: 48px;
+        margin-top: 3rem;
+    }
+    .btn-box div{
+        width: 120px;
+        height: 48px;
+    }
+    .btn{
+        width: 120px;
+        height: 48px;
+    }
+    .nav11 a{
+        font-size: 18px;
+    }
+    .navbtn{
+        display: none;
+    }
+}
+@media screen and (max-width:650px) {
+    
+    .nav1{
+        display: none;
+    }
+    .navbtn{
+        display: block;
+    }
+    .main11{
+        width: 100%;
+        padding: 1rem;
+        height: 600px;
+    }
+    .main11 h1{
+        margin: 1rem;
+    }
+    .main11 p{
+      margin: 1rem 0 0 0;
+    }
+    .main11 img{
+        width: 74%;
+        height: 74%;
+    }
+    .btn-box{
+        width: 190px;
+        height: 68px;
+        margin-top: 2rem;
+    }
+    .btn-box div{
+        width: 190px;
+        height: 68px;
+    }
+    .btn{
+        width: 190px;
+        height: 68px;
+    }
+    .news{
+        padding:3rem;
+    }
+    .news2{
+        align-items: flex-start;
+        flex-direction: column;
+        height: auto;
+    }
+    .news2 input{
+        height: 4rem;
+        margin: 10px 0px;
+    }
+    .foot{
+        flex-direction: column;
+    }
+    .foot1{
+        width: 100%;
+        text-align: center;
+    }
+    .foot2{
+        width: 100%;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+}
