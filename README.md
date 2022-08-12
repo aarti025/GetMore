@@ -1,2 +1,2 @@
 # GetMore
-this a portfolio of a website design by me.
+this is a website portfolio design by me.
